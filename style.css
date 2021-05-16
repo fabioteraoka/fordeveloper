@@ -45,6 +45,7 @@ img {
 
 header nav ul {
   display: flex;
+  justify-content: space-between;
 }
 
 header nav ul li {
@@ -56,7 +57,7 @@ header nav ul li a {
   color: white;
   text-transform: uppercase;
   font-size: 2rem; 
-  padding: 2.4rem;
+  padding: 1rem;
   transition: all 250ms linear 0s;
 }
 
