@@ -1,0 +1,52 @@
+{
+    "hosting": [
+        {
+            "id": "001",
+            "name": "Netlify",
+            "link": "https://app.netlify.com/",
+            "logo": "./image/netlify.svg",
+            "description": "Netlify is an all-in-one platform for automating modern 
+            web projects. Replace your hosting infrastructure, continuous integration, 
+            and deployment pipeline with a single workflow. Integrate dynamic functionality 
+            like serverless functions, user authentication, and form handling as your projects grow."
+        },
+        {
+            "id": "002",
+            "name": "Heroku",
+            "link": "https://dashboard.heroku.com/",
+            "logo": "./image/heroku.svg",
+            "description": "Heroku is a platform as a service based on a managed container system, 
+            with integrated data services and a powerful ecosystem, for deploying and running 
+            modern apps. The Heroku developer experience is an app-centric approach for software 
+            delivery, integrated with today’s most popular developer tools and workflows."
+        },
+        {
+            "id": "003",
+            "name": "Vercel",
+            "link": "https://vercel.com/",
+            "logo": "./image/vercel.svg",
+            "description": "Vercel combines the best developer experience with an obsessive focus on end-user performance.
+            Our platform enables frontend teams to do their best work."
+        }
+    ],
+    "image": [
+        {
+            "id":"001",
+            "name": "Unsplash",
+            "link": "https://unsplash.com/",
+            "logo": "./image/unsplash.svg",
+            "description": "Over 2 million free high-resolution images brought to you by the 
+            world’s most generous community of photographers."
+        },
+        {
+            "id":"002",
+            "name": "Undraw",
+            "link": "https://undraw.co/illustrations",
+            "logo": "./image/unsplash.svg",
+            "description": "Browse to find the images that fit your needs and click to download.
+             Use the on-the-fly color image generation to match your brand identity."
+        }
+    ]
+
+}
+
