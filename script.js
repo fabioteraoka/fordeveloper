@@ -36,6 +36,24 @@ function sectionHosting(a) {
   card.remove();
 }
 
+function sectionFollow(a) {
+  devFollow.map((devFollow) => {
+    const cardClone = card.cloneNode(true);
+    if (a === devFollow.section) {
+      // cardClone.querySelector("div").href = devFollow.link;
+      cardClone.querySelector(".name").href = devFollow.link;
+      cardClone.querySelector(".name").innerHTML = devFollow.name;
+      cardClone.querySelector("h3").innerHTML = devFollow.rede;
+      // cardClone.querySelector("a").href = devFollow.link;
+      cardClone.querySelector("img").src = devFollow.logo;
+      // cardClone.querySelector(".description").innerHTML = devFollow.description;
+      sectionCards.appendChild(cardClone);
+
+    }
+  });
+  card.remove();
+}
+
 function cleanPage() {
   sectionCards.innerHTML = "";
 }
@@ -267,7 +285,7 @@ const devtools = [
         id: "028",
         name: "Exercism",
         section: "Learning",
-        link: "https://www.exrcism.io",
+        link: "https://www.exercism.io",
         logo: "",
         description:"We are working with our community and leading researchers to build a deeper understanding of how people code and think. We're using this knowledge to improve Exercism in order to provide opportunity for people of all backgrounds by helping them develop their programming skills through practice and mentorship.",
       },
@@ -319,25 +337,58 @@ const devtools = [
         logo: "",
         description:"A CSS generator that helps you demonstrate and quickly generate CSS declarations for your website. It comes with many useful generator tools with many options and they demonstrate instanly. Thus it also helps demonstrates many CSS properties in a visual understandable way. Please choose one of the tools above and then adjust the options accordingly. CSS declarations are just one click away.",
       },
+      {
+        id: "035",
+        name: "Imgur",
+        section: "Image",
+        link: "https://imgurinc.com/",
+        logo: "",
+        description:"Imgur is the easiest way to discover and enjoy the magic of the Internet. It’s where you’ll find the funniest, most informative and inspiring images, memes, GIFs, and visual stories served up in an endless stream of bite-sized fun. Powered by a passionate community of people from all around the world, anyone can join to share cool stuff and vote the best to the top.",
+      },
+      {
+        id: "036",
+        name: "FlexBoxFroggy",
+        section: "Learning",
+        link: "https://flexboxfroggy.com/",
+        logo: "",
+        description:"Welcome to Flexbox Froggy, a game where you help Froggy and friends by writing CSS code!",
+      },
+      {
+        id: "037",
+        name: "CSS Generator",
+        section: "Generator",
+        link: "https://css-generator.netlify.app/",
+        logo: "",
+        description:"CSS Generator netlify",
+      },
+      {
+        id: "038",
+        name: "Animista",
+        section: "Generator",
+        link: "https://animista.net/",
+        logo: "",
+        description:"ANIMISTA IS A PLACE WHERE YOU CAN PLAY WITH A COLLECTION OF PRE-MADE CSS ANIMATIONS, TWEAK THEM AND GET ONLY THOSE YOU WILL ACTUALLY USE.",
+      },
+      {
+        id: "039",
+        name: "Flex Boxes",
+        section: "Generator",
+        link: "https://the-echoplex.net/flexyboxes/",
+        logo: "",
+        description:"Flex Box Generator",
+      },
+      {
+        id: "040",
+        name: "CSSportal",
+        section: "Generator",
+        link: "https://www.cssportal.com/css-generators.php",
+        logo: "",
+        description:"CSS Portal is home to many examples of CSS and how it can be used in website design. Here you'll find all CSS properties and many CSS generators to help with all you design needs.",
+      },
   ];
-
-  function sectionFollow(a) {
-    devFollow.map((devFollow) => {
-      const cardClone = card.cloneNode(true);
-      if (a === devFollow.section) {
-        // cardClone.querySelector("div").href = devFollow.link;
-        cardClone.querySelector(".name").href = devFollow.link;
-        cardClone.querySelector(".name").innerHTML = devFollow.name;
-        cardClone.querySelector("h3").innerHTML = devFollow.rede;
-        // cardClone.querySelector("a").href = devFollow.link;
-        cardClone.querySelector("img").src = devFollow.logo;
-        // cardClone.querySelector(".description").innerHTML = devFollow.description;
-        sectionCards.appendChild(cardClone);
   
-      }
-    });
-    card.remove();
-  }
+
+
 const devFollow =[
     {
       id: "001",
