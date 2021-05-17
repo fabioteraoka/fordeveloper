@@ -198,9 +198,61 @@ main .image img {
   align-items: center;
 }
 
-footer h3{
-  text-align: center;
-  font-size: 2rem;
+/* FOOTER */
+footer {
+  background-color:#41B5A5;
 }
+footer .container {
+  padding: 20px;
+}
+footer nav ul li a {
+  color: white;
+}
+
+footer nav .info-contato li {
+  margin: 0 0 15px;
+}
+
+footer nav .redes-sociais {
+  border-top: 1px solid rgb(255 255 255 / 20%);
+  margin: 5px 0 2px;
+  padding: 5px 0 0;
+  text-align: center;
+}
+footer nav .redes-sociais li {
+  margin: 15px 28px;
+  text-align: center;
+  display: inline-block;
+}
+
+footer nav .redes-sociais li a img {
+  width: 40px;
+  transition: 0.2s;
+}
+footer nav .redes-sociais li a:hover img {
+  transform: scale(1.2) translateY(-10px);
+}
+
+/* @MEDIA */
+@media only screen and (min-width: 768px) {
+
+  footer nav .redes-sociais {
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+    max-width: 1125px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  footer nav .redes-sociais li {
+    margin: 0 14px;
+    text-align: center;
+    display: initial;
+  }
+}
+
 
 
