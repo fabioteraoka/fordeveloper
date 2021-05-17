@@ -1,9 +1,21 @@
 const sectionCards = document.querySelector("section.cards");
 const card = document.querySelector("div.card");
 
+// let show = true; 
+// const menuSection = document.querySelector(".menu-section")
+// const menuToggle = menuSection.querySelector(".menu-toggle")
+
+
+
+
 function sections(a) {
   cleanPage(a);
   sectionHosting(a);
+
+}
+function follow(a){
+  cleanPage(a);
+  sectionFollow(a);
 }
 
 function sectionHosting(a) {
@@ -18,6 +30,7 @@ function sectionHosting(a) {
     //   cardClone.querySelector("img").src = devtool.logo;
       cardClone.querySelector(".description").innerHTML = devtool.description;
       sectionCards.appendChild(cardClone);
+
     }
   });
   card.remove();
@@ -298,4 +311,136 @@ const devtools = [
         logo: "",
         description:"Stripes Generator",
       },
+      {
+        id: "034",
+        name: "CSS Generator",
+        section: "Generator",
+        link: "https://cssgenerator.org/",
+        logo: "",
+        description:"A CSS generator that helps you demonstrate and quickly generate CSS declarations for your website. It comes with many useful generator tools with many options and they demonstrate instanly. Thus it also helps demonstrates many CSS properties in a visual understandable way. Please choose one of the tools above and then adjust the options accordingly. CSS declarations are just one click away.",
+      },
   ];
+
+  function sectionFollow(a) {
+    devFollow.map((devFollow) => {
+      const cardClone = card.cloneNode(true);
+      if (a === devFollow.section) {
+        // cardClone.querySelector("div").href = devFollow.link;
+        cardClone.querySelector(".name").href = devFollow.link;
+        cardClone.querySelector(".name").innerHTML = devFollow.name;
+        cardClone.querySelector("h3").innerHTML = devFollow.rede;
+        // cardClone.querySelector("a").href = devFollow.link;
+        cardClone.querySelector("img").src = devFollow.logo;
+        // cardClone.querySelector(".description").innerHTML = devFollow.description;
+        sectionCards.appendChild(cardClone);
+  
+      }
+    });
+    card.remove();
+  }
+const devFollow =[
+    {
+      id: "001",
+      name: "Filipe Deschamps",
+      rede: "Youtube",
+      section:"Follow",
+      logo: "https://yt3.ggpht.com/ytc/AAUvwnjmOwHGXldA8NPXJ4vIFtA4334qT5fspJMPoM4p=s88-c-k-c0x00ffffff-no-rj",
+      link: "https://www.youtube.com/c/FilipeDeschamps",
+    },
+    {
+      id: "002",
+      name: "Mayk Brito",
+      rede: "Youtube",
+      section:"Follow",
+      logo: "https://yt3.ggpht.com/HIRhY9TY7pQ4EV_D4pQkftk2kEN2oX1wCBCxSyxKNx7VzAZpooyqhOUEBqGBwSHg4ZK31eInYg=s88-c-k-c0x00ffffff-no-rj",
+      link: "https://www.youtube.com/user/maykbrito",
+    },
+    {
+      id: "003",
+      name: "Coding Addict",
+      rede: "Youtube",
+      section:"Follow",
+      logo: "https://yt3.ggpht.com/ytc/AAUvwniaHN7MZyFEiNvdHuKMzIWnDF604Z2--O4GCMq-FA=s88-c-k-c0x00ffffff-no-rj",
+      link: "https://www.youtube.com/c/CodingAddict",
+    },
+    {
+      id: "004",
+      name: "Roger Melo",
+      rede: "Youtube",
+      section:"Follow",
+      logo: "https://yt3.ggpht.com/ytc/AAUvwnin7qqRZkktm9OuLtuqqlFL0zKYLbA9zQlF3jLY=s88-c-k-c0x00ffffff-no-rj",
+      link: "https://www.youtube.com/c/RogerMelo",
+    },
+    {
+      id: "005",
+      name: "Easy Tutorial",
+      rede: "Youtube",
+      section:"Follow",
+      logo: "https://yt3.ggpht.com/ytc/AAUvwngJOnqXAjdaVpCXl1DqBr66FiWTUTwKIWRSpO12zg=s88-c-k-c0x00ffffff-no-rj",
+      link: "https://www.youtube.com/c/EasyTutorialsVideo",
+    },
+    {
+      id: "006",
+      name: "Dev Soutinho",
+      rede: "Youtube",
+      section:"Follow",
+      logo: "https://yt3.ggpht.com/ytc/AAUvwngefd3vA7dfIMPOptyG2rPVD17f0EdrtBA52JoR=s88-c-k-c0x00ffffff-no-rj",
+      link: "https://www.youtube.com/c/DevSoutinho",
+    },
+    {
+      id: "007",
+      name: "Rocketseat",
+      rede: "Youtube",
+      section:"Follow",
+      logo: "https://yt3.ggpht.com/ytc/AAUvwniZFvNe5OEM2bTjcGRdH8fOW06pr9HYSJCwDPK_BA=s88-c-k-c0x00ffffff-no-rj",
+      link: "https://www.youtube.com/c/RocketSeat",
+    },
+    {
+      id: "008",
+      name: "Matheus Battisti",
+      rede: "Youtube",
+      section:"Follow",
+      logo: "https://yt3.ggpht.com/ytc/AAUvwnhHu9X02gDe9blsLBUtFzLEQi20eWIRmfNVJGaR=s88-c-k-c0x00ffffff-no-rj",
+      link: "https://www.youtube.com/c/MatheusBattisti",
+    },
+    {
+      id: "009",
+      name: "Origamid",
+      rede: "Youtube",
+      section:"Follow",
+      logo: "https://yt3.ggpht.com/ytc/AAUvwnh0cnioinxq6vVaY0R9DLCfBv4Vi5VDJnSFnqe9=s88-c-k-c0x00ffffff-no-rj",
+      link: "https://www.youtube.com/c/Origamid/",
+    },
+    {
+      id: "010",
+      name: "Ania Kubów",
+      rede: "Youtube",
+      section:"Follow",
+      logo: "https://yt3.ggpht.com/ytc/AAUvwnjSRt8sIbeM7P--pHoUDh67sDhaNTCMF_XiNOCvUw=s88-c-k-c0x00ffffff-no-rj",
+      link: "https://www.youtube.com/c/AniaKub%C3%B3w",
+    },
+    {
+      id: "011",
+      name: "Florin Pop",
+      rede: "Youtube",
+      section:"Follow",
+      logo: "https://yt3.ggpht.com/ytc/AAUvwni7l--cxhsMtvLBc7eqUNgsFIW6rsAE7fbSt4fz=s88-c-k-c0x00ffffff-no-rj",
+      link: "https://www.youtube.com/florinpop",
+    },
+    {
+      id: "012",
+      name: "Prathkum",
+      rede: "twitter",
+      section:"Follow",
+      logo: "https://pbs.twimg.com/profile_images/1394348205794480129/mprRHH9b_400x400.jpg",
+      link: "https://twitter.com/Prathkum",
+    },
+    {
+      id: "013",
+      name: "George Moller",
+      rede: "twitter",
+      section:"Follow",
+      logo: "https://pbs.twimg.com/profile_images/1379109905311928322/E0YheLeY_400x400.jpg",
+      link: "https://twitter.com/_georgemoller",
+    },
+]
