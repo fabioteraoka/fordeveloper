@@ -388,7 +388,7 @@ const devtools = [
       {
         id: "041",
         name: "Behance",
-        section: "Mockup",
+        section: "Design",
         link: "https://www.behance.net/",
         logo: "",
         description:"Explore files and plugins made just for Figma",
