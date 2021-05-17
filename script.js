@@ -290,4 +290,12 @@ const devtools = [
         logo: "",
         description:"StackEdit’s Markdown syntax highlighting is unique. The refined text formatting of the editor helps you visualize the final rendering of your files.",
       },
+      {
+        id: "033",
+        name: "CSS Stripes",
+        section: "Generator",
+        link: "https://stripesgenerator.com/",
+        logo: "",
+        description:"Stripes Generator",
+      },
   ];
