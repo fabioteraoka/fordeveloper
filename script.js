@@ -573,4 +573,12 @@ const devFollow =[
       logo: "./image/webapp_creator.jpg",
       link: "https://www.instagram.com/webapp_creator/",
     },
+    {
+      id: "020",
+      name: "developerspace",
+      rede: "Instagran",
+      section:"Follow",
+      logo: "./image/developerspace.jpg",
+      link: "https://www.instagram.com/developerspace/",
+    },
 ]
