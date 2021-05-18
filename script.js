@@ -22,7 +22,7 @@ function sectionHosting(a) {
   devtools.map((devtool) => {
     const cardClone = card.cloneNode(true);
     if (a === devtool.section) {
-      cardClone.querySelector("div").href = devtool.link;
+      // cardClone.querySelector("div").href = devtool.link;
       cardClone.querySelector(".name").href = devtool.link;
       cardClone.querySelector(".name").innerHTML = devtool.name;
       cardClone.querySelector("h3").innerHTML = devtool.section;
@@ -57,6 +57,29 @@ function sectionFollow(a) {
 function cleanPage() {
   sectionCards.innerHTML = "";
 }
+
+// Modal actions
+// const modalOverlay = document.querySelector(".modal-overlay");
+// const modal = document.querySelector(".modal");
+// const cards = [...document.querySelectorAll(".cards .card")];
+
+// cards.forEach(card => {
+//   card.addEventListener("click", () => {
+//     modal.querySelector(
+//       "iframe"
+//     ).src = `https://www.youtube.com/embed/${card.getAttribute("id")}`;
+//     modalOverlay.classList.add("active");
+//     modal.classList.add("active");
+//     document.querySelector("body").style.overflow = "hidden";
+//   });
+// });
+
+// document.querySelector(".close-modal").addEventListener("click", () => {
+//   modalOverlay.classList.remove("active");
+//   modal.classList.remove("active");
+//   modal.querySelector("iframe").src = ``;
+//   document.querySelector("body").style.overflow = "initial";
+// });
 
 
 const devtools = [
@@ -501,5 +524,53 @@ const devFollow =[
       section:"Follow",
       logo: "https://pbs.twimg.com/profile_images/1379109905311928322/E0YheLeY_400x400.jpg",
       link: "https://twitter.com/_georgemoller",
+    },
+    {
+      id: "014",
+      name: "richwebdeveloper",
+      rede: "Instagran",
+      section:"Follow",
+      logo: "./image/richwebdeveloper.jpeg",
+      link: "https://www.instagram.com/richwebdeveloper/",
+    },
+    {
+      id: "015",
+      name: "girl.coding",
+      rede: "Instagran",
+      section:"Follow",
+      logo: "./image/girl.coding.jpg",
+      link: "https://www.instagram.com/girl.coding/",
+    },
+    {
+      id: "016",
+      name: "matheusfc.dev",
+      rede: "Instagran",
+      section:"Follow",
+      logo: "./image/matheusfc.dev.jpg",
+      link: "https://www.instagram.com/matheusfc.dev/",
+    },
+    {
+      id: "017",
+      name: "papodedev",
+      rede: "Instagran",
+      section:"Follow",
+      logo: "./image/papodedev.jpg",
+      link: "https://www.instagram.com/papodedev/",
+    },
+    {
+      id: "018",
+      name: "makenicecode",
+      rede: "Instagran",
+      section:"Follow",
+      logo: "./image/makenicecode.jpg",
+      link: "https://www.instagram.com/makenicecode/",
+    },
+    {
+      id: "019",
+      name: "webapp_creator",
+      rede: "Instagran",
+      section:"Follow",
+      logo: "./image/webapp_creator.jpg",
+      link: "https://www.instagram.com/webapp_creator/",
     },
 ]
